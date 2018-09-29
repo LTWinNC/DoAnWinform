@@ -1,0 +1,12 @@
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\bin\Debug\ApplicationWinform.exe
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\bin\Debug\ApplicationWinform.pdb
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.csprojResolveAssemblyReference.cache
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.Properties.Resources.resources
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.csproj.GenerateResource.Cache
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.exe.licenses
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.exe
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.pdb
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\bin\Debug\ApplicationWinform.exe.config
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLGiaoVien.resources
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLHocVien.resources
+D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLKetQua.resources
