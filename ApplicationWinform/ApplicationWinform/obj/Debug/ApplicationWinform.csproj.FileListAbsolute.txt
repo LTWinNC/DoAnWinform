@@ -10,3 +10,19 @@ D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\bin\De
 D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLGiaoVien.resources
 D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLHocVien.resources
 D:\School\4th\Window\Do An Winforms\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLKetQua.resources
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\bin\Debug\ApplicationWinform.exe.config
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.exe
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.pdb
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\bin\Debug\ApplicationWinform.exe
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\bin\Debug\ApplicationWinform.pdb
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.csprojResolveAssemblyReference.cache
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLGiaoVien.resources
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLHocVien.resources
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.Properties.Resources.resources
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLKetQua.resources
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLKhoaHoc.resources
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLLichHoc.resources
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.QLLopHoc.resources
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.csproj.GenerateResource.Cache
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.exe.licenses
+D:\School\GitHub\DoAnWinform\ApplicationWinform\ApplicationWinform\obj\Debug\ApplicationWinform.FrmMain.resources

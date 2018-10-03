@@ -40,5 +40,10 @@ namespace ApplicationWinform
             if (r == DialogResult.No)
                 e.Cancel = true;
         }
+
+        private void btnSearch_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+                MessageBox.Show(edtSearch.EditValue.ToString());
+        }
     }
 }

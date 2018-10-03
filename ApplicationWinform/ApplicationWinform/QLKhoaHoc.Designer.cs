@@ -34,26 +34,36 @@
             this.kHOAHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kHOAHOCTableAdapter = new ApplicationWinform.QLHVDataSetTableAdapters.KHOAHOCTableAdapter();
             this.tableAdapterManager = new ApplicationWinform.QLHVDataSetTableAdapters.TableAdapterManager();
-            this.kHOAHOCBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.kHOAHOCBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.kHOAHOCDataGridView = new System.Windows.Forms.DataGridView();
+            this.btnAdd = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDel = new DevExpress.XtraBars.BarButtonItem();
+            this.btnUpdate = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSave = new DevExpress.XtraBars.BarButtonItem();
+            this.btnCancel = new DevExpress.XtraBars.BarButtonItem();
+            this.edtMakhoa = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.edtTenkhoa = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.qLHVDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kHOAHOCBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kHOAHOCBindingNavigator)).BeginInit();
-            this.kHOAHOCBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
+            this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kHOAHOCDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edtMakhoa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edtTenkhoa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             this.SuspendLayout();
             // 
             // qLHVDataSet
@@ -84,119 +94,64 @@
             this.tableAdapterManager.LOPHOCTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = ApplicationWinform.QLHVDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // kHOAHOCBindingNavigator
+            // ribbonControl1
             // 
-            this.kHOAHOCBindingNavigator.AddNewItem = null;
-            this.kHOAHOCBindingNavigator.BindingSource = this.kHOAHOCBindingSource;
-            this.kHOAHOCBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.kHOAHOCBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.kHOAHOCBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorDeleteItem,
-            this.kHOAHOCBindingNavigatorSaveItem});
-            this.kHOAHOCBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.kHOAHOCBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.kHOAHOCBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.kHOAHOCBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.kHOAHOCBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.kHOAHOCBindingNavigator.Name = "kHOAHOCBindingNavigator";
-            this.kHOAHOCBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.kHOAHOCBindingNavigator.Size = new System.Drawing.Size(669, 27);
-            this.kHOAHOCBindingNavigator.TabIndex = 0;
-            this.kHOAHOCBindingNavigator.Text = "bindingNavigator1";
+            this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl1.ExpandCollapseItem,
+            this.btnAdd,
+            this.btnDel,
+            this.btnUpdate,
+            this.btnSave,
+            this.btnCancel});
+            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.MaxItemId = 6;
+            this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage1});
+            this.ribbonControl1.Size = new System.Drawing.Size(1201, 177);
             // 
-            // bindingNavigatorMoveFirstItem
+            // ribbonPage1
             // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Quản lý khóa học";
             // 
-            // bindingNavigatorMovePreviousItem
+            // ribbonPageGroup1
             // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnAdd);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnDel);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnUpdate);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnSave);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnCancel);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
-            // bindingNavigatorSeparator
+            // layoutControl1
             // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.layoutControl1.Controls.Add(this.edtTenkhoa);
+            this.layoutControl1.Controls.Add(this.edtMakhoa);
+            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.layoutControl1.Location = new System.Drawing.Point(0, 177);
+            this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.Root = this.layoutControlGroup1;
+            this.layoutControl1.Size = new System.Drawing.Size(1201, 120);
+            this.layoutControl1.TabIndex = 1;
+            this.layoutControl1.Text = "layoutControl1";
             // 
-            // bindingNavigatorPositionItem
+            // layoutControlGroup1
             // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // kHOAHOCBindingNavigatorSaveItem
-            // 
-            this.kHOAHOCBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.kHOAHOCBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("kHOAHOCBindingNavigatorSaveItem.Image")));
-            this.kHOAHOCBindingNavigatorSaveItem.Name = "kHOAHOCBindingNavigatorSaveItem";
-            this.kHOAHOCBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 24);
-            this.kHOAHOCBindingNavigatorSaveItem.Text = "Save Data";
-            this.kHOAHOCBindingNavigatorSaveItem.Click += new System.EventHandler(this.kHOAHOCBindingNavigatorSaveItem_Click);
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1,
+            this.emptySpaceItem1,
+            this.layoutControlItem2});
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.OptionsItemText.TextToControlDistance = 4;
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1201, 120);
+            this.layoutControlGroup1.TextVisible = false;
             // 
             // kHOAHOCDataGridView
             // 
@@ -206,43 +161,130 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.kHOAHOCDataGridView.DataSource = this.kHOAHOCBindingSource;
-            this.kHOAHOCDataGridView.Location = new System.Drawing.Point(0, 32);
+            this.kHOAHOCDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kHOAHOCDataGridView.Location = new System.Drawing.Point(0, 297);
             this.kHOAHOCDataGridView.Name = "kHOAHOCDataGridView";
             this.kHOAHOCDataGridView.RowTemplate.Height = 24;
-            this.kHOAHOCDataGridView.Size = new System.Drawing.Size(669, 547);
-            this.kHOAHOCDataGridView.TabIndex = 1;
+            this.kHOAHOCDataGridView.Size = new System.Drawing.Size(1201, 382);
+            this.kHOAHOCDataGridView.TabIndex = 2;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Caption = "Thêm mới";
+            this.btnAdd.Id = 1;
+            this.btnAdd.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.btnAdd.Name = "btnAdd";
+            // 
+            // btnDel
+            // 
+            this.btnDel.Caption = "Xóa dữ liệu.";
+            this.btnDel.Id = 2;
+            this.btnDel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.btnDel.Name = "btnDel";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Caption = "Sửa dữ liệu";
+            this.btnUpdate.Id = 3;
+            this.btnUpdate.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.btnUpdate.Name = "btnUpdate";
+            // 
+            // btnSave
+            // 
+            this.btnSave.Caption = "Lưu thay đổi";
+            this.btnSave.Id = 4;
+            this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
+            this.btnSave.Name = "btnSave";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Caption = "Hủy thay đổi";
+            this.btnCancel.Id = 5;
+            this.btnCancel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
+            this.btnCancel.Name = "btnCancel";
+            // 
+            // edtMakhoa
+            // 
+            this.edtMakhoa.Location = new System.Drawing.Point(104, 16);
+            this.edtMakhoa.MenuManager = this.ribbonControl1;
+            this.edtMakhoa.Name = "edtMakhoa";
+            this.edtMakhoa.Size = new System.Drawing.Size(1081, 22);
+            this.edtMakhoa.StyleController = this.layoutControl1;
+            this.edtMakhoa.TabIndex = 4;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.edtMakhoa;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(1175, 28);
+            this.layoutControlItem1.Text = "Mã khóa học";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(84, 17);
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 56);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(1175, 38);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // edtTenkhoa
+            // 
+            this.edtTenkhoa.Location = new System.Drawing.Point(104, 44);
+            this.edtTenkhoa.MenuManager = this.ribbonControl1;
+            this.edtTenkhoa.Name = "edtTenkhoa";
+            this.edtTenkhoa.Size = new System.Drawing.Size(1081, 22);
+            this.edtTenkhoa.StyleController = this.layoutControl1;
+            this.edtTenkhoa.TabIndex = 5;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.edtTenkhoa;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 28);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(1175, 28);
+            this.layoutControlItem2.Text = "Tên khóa học";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(84, 17);
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "MAKHOAHOC";
             this.dataGridViewTextBoxColumn1.HeaderText = "Mã khóa học";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 150;
+            this.dataGridViewTextBoxColumn1.Width = 200;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "TENKHOAHOC";
             this.dataGridViewTextBoxColumn2.HeaderText = "Tên khóa học";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 250;
+            this.dataGridViewTextBoxColumn2.Width = 200;
             // 
             // QLKhoaHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 576);
+            this.ClientSize = new System.Drawing.Size(1201, 679);
             this.Controls.Add(this.kHOAHOCDataGridView);
-            this.Controls.Add(this.kHOAHOCBindingNavigator);
+            this.Controls.Add(this.layoutControl1);
+            this.Controls.Add(this.ribbonControl1);
             this.Name = "QLKhoaHoc";
             this.Text = "QLKhoaHoc";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QLKhoaHoc_FormClosing);
             this.Load += new System.EventHandler(this.QLKhoaHoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.qLHVDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kHOAHOCBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kHOAHOCBindingNavigator)).EndInit();
-            this.kHOAHOCBindingNavigator.ResumeLayout(false);
-            this.kHOAHOCBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
+            this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kHOAHOCDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edtMakhoa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edtTenkhoa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,18 +296,21 @@
         private System.Windows.Forms.BindingSource kHOAHOCBindingSource;
         private QLHVDataSetTableAdapters.KHOAHOCTableAdapter kHOAHOCTableAdapter;
         private QLHVDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator kHOAHOCBindingNavigator;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton kHOAHOCBindingNavigatorSaveItem;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
+        private DevExpress.XtraBars.BarButtonItem btnAdd;
+        private DevExpress.XtraBars.BarButtonItem btnDel;
+        private DevExpress.XtraBars.BarButtonItem btnUpdate;
+        private DevExpress.XtraBars.BarButtonItem btnSave;
+        private DevExpress.XtraBars.BarButtonItem btnCancel;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraLayout.LayoutControl layoutControl1;
+        private DevExpress.XtraEditors.TextEdit edtTenkhoa;
+        private DevExpress.XtraEditors.TextEdit edtMakhoa;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private System.Windows.Forms.DataGridView kHOAHOCDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

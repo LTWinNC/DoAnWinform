@@ -22,10 +22,13 @@ namespace ApplicationWinform
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
-            Application.Run(new QLHocVien());
-            Application.Run(new QLGiaoVien());
-            Application.Run(new QLKetQua());
-
+            Application.Run(new FrmMain());
+            //Application.Run(new QLHocVien());
+            //Application.Run(new QLGiaoVien());
+            //Application.Run(new QLKetQua());
+            //Application.Run(new QLLopHoc());
+            //Application.Run(new QLLichHoc());
+            //Application.Run(new QLKhoaHoc());
         }
     }
 }

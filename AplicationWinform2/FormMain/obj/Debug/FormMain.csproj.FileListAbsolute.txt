@@ -1,0 +1,9 @@
+D:\School\GitHub\DoAnWinform\AplicationWinform2\FormMain\bin\Debug\FormMain.exe
+D:\School\GitHub\DoAnWinform\AplicationWinform2\FormMain\bin\Debug\FormMain.pdb
+D:\School\GitHub\DoAnWinform\AplicationWinform2\FormMain\obj\Debug\FormMain.csprojResolveAssemblyReference.cache
+D:\School\GitHub\DoAnWinform\AplicationWinform2\FormMain\obj\Debug\FormMain.Form1.resources
+D:\School\GitHub\DoAnWinform\AplicationWinform2\FormMain\obj\Debug\FormMain.Properties.Resources.resources
+D:\School\GitHub\DoAnWinform\AplicationWinform2\FormMain\obj\Debug\FormMain.csproj.GenerateResource.Cache
+D:\School\GitHub\DoAnWinform\AplicationWinform2\FormMain\obj\Debug\FormMain.exe.licenses
+D:\School\GitHub\DoAnWinform\AplicationWinform2\FormMain\obj\Debug\FormMain.exe
+D:\School\GitHub\DoAnWinform\AplicationWinform2\FormMain\obj\Debug\FormMain.pdb
